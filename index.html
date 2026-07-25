@@ -175,13 +175,13 @@
 
           <!-- Carte projet 1 -->
           <article class="project-card">
-            <img src="images/project-distrisys.jpg" alt="Aperçu du tableau de bord de suivi des ventes Distrisys" loading="lazy">
+            <img src="images/project-congotopfashion.jpg" alt="Aperçu du tableau de bord CongoTopFashion : chiffre d'affaires par boutique et segmentation clients" loading="lazy">
             <div class="project-card-body">
-              <h3>Tableau de bord de suivi des ventes — Distrisys</h3>
+              <h3>Tableau de bord décisionnel global — CongoTopFashion</h3>
               <p>
-                Conception d'un rapport de suivi des ventes adossé à un Data Warehouse, pour
-                unifier les chiffres de vente d'un grossiste en électroménager multi-sites et
-                mettre fin aux conflits de chiffres entre services.
+                Conception d'un tableau de bord centralisant plus de 25 domaines métier (clients,
+                produits, boutiques, stocks, marketing, logistique...) pour unifier le pilotage
+                décisionnel de CongoTopFashion dans une vue globale pour la direction.
               </p>
               <button class="btn btn-outline" data-project="project-1">Voir le détail</button>
             </div>
@@ -223,30 +223,32 @@
     <div class="modal-overlay" id="modalOverlay">
       <div class="modal" id="modal-project-1">
         <button class="modal-close" aria-label="Fermer">&times;</button>
-        <h3>Tableau de bord de suivi des ventes — Distrisys</h3>
+        <h3>Tableau de bord décisionnel global — CongoTopFashion</h3>
         <h4>Problème</h4>
         <p>
-          Distrisys, grossiste et distributeur exclusif d'appareils électroménagers (marques
-          Lagon, Cuccina, Pierre-Michel), commercialise ses produits via un réseau de revendeurs
-          agréés, des distributeurs généralistes, des magasins spécialisés et des sites
-          marchands. Les budgets de vente étaient saisis indépendamment par chaque site dans
-          Excel, ce qui multipliait les sources de données : chaque service disposait de ses
-          propres chiffres, et les comités de direction tournaient régulièrement à l'affrontement
-          pour déterminer quel chiffre était le bon.
+          Ce projet s'inscrit dans le cadre de la modernisation du pilotage décisionnel de
+          CongoTopFashion, une entreprise structurée autour de nombreuses entités opérationnelles :
+          clients, produits, catégories, sous-catégories, marques, fournisseurs, employés,
+          boutiques, commandes, stocks, promotions, campagnes marketing, objectifs commerciaux,
+          livraisons, retours, etc. L'objectif était de construire un tableau de bord global pour
+          la direction, capable de centraliser et d'analyser l'ensemble des données de l'entreprise
+          dans une vue unifiée. Le fichier source contient plus de 25 onglets thématiques, chacun
+          dédié à un domaine métier spécifique (KPI global, KPI annuel, analyse des catégories,
+          analyse des boutiques, analyse clients RFM, analyse marketing, analyse logistique
+          retours, analyse fournisseurs, analyse stocks, etc.).
         </p>
         <h4>Méthode</h4>
         <p>
-          Une étude de cadrage a été menée avec les équipes métier et les décideurs stratégiques
-          pour définir le périmètre du projet. Sur cette base, l'équipe ETL a mis en place un Data
-          Warehouse (DWH) centralisant les données de vente de l'ensemble des sites. Ma mission a
-          consisté à concevoir, à partir de ce DWH, un rapport de suivi des ventes (tableau de
-          bord) offrant une lecture unique et fiable de la performance commerciale.
+          À l'aide d'Excel, j'ai construit des indicateurs de chiffre d'affaires par boutique, de
+          chiffre d'affaires par segment, ainsi qu'une répartition des motifs de retour, à partir
+          des plus de 25 onglets sources.
         </p>
         <h4>Résultat</h4>
         <p>
-          Le temps de consolidation des chiffres de vente est passé de 7 jours à 5 heures, avec
-          une mise à jour désormais hebdomadaire du reporting, mettant fin aux écarts de chiffres
-          entre services.
+          L'analyse a révélé que le canal e-commerce génère le chiffre d'affaires le plus élevé de
+          tous les segments, et que les problèmes de taille constituent le principal motif de
+          retour — deux constats qui ont directement orienté les priorités d'action de la
+          direction.
         </p>
       </div>
       <div class="modal" id="modal-project-2">
