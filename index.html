@@ -215,6 +215,19 @@
             </div>
           </article>
 
+          <article class="project-card">
+            <img src="images/project-baraka.jpg" alt="Aperçu du tableau de bord de performance commerciale Baraka Energies : quatre indicateurs et l'évolution mensuelle du CA avec sa moyenne mobile" loading="lazy">
+            <div class="project-card-body">
+              <h3>Performance commerciale et objectifs — Baraka Energies</h3>
+              <p>
+                Refonte d'un rapport Power BI de ventes d'équipements solaires dans une vingtaine
+                de pays africains : quatre KPI, des titres qui concluent et une seule information
+                mise en avant par visuel, pour lire la performance en quelques secondes.
+              </p>
+              <button class="btn btn-outline" data-project="project-4">Voir le détail</button>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -299,6 +312,36 @@
           des trois segments, génèrent également le chiffre d'affaires le plus important —
           orientant la direction vers un arbitrage sur ce segment plutôt qu'une réduction
           uniforme des coûts.
+        </p>
+      </div>
+
+      <div class="modal" id="modal-project-4">
+        <button class="modal-close" aria-label="Fermer">&times;</button>
+        <h3>Performance commerciale et objectifs — Baraka Energies</h3>
+        <h4>Problème</h4>
+        <p>
+          Baraka Energies distribue des kits solaires, des batteries et des appareils basse
+          tension dans une vingtaine de pays africains. Son rapport de ventes alignait une dizaine
+          d'indicateurs sur un fond sombre, sans hiérarchie ni conclusion : la direction ne voyait
+          pas d'un coup d'œil si l'activité progressait, ni où agir.
+        </p>
+        <h4>Méthode</h4>
+        <p>
+          Dans Power BI (format PBIP), j'ai réduit la vue d'ensemble à quatre indicateurs — chiffre
+          d'affaires, marge, taux de marge et croissance cumulée vs N-1 — et à un seul grand
+          visuel : l'évolution mensuelle du CA avec sa moyenne mobile sur trois mois. J'ai créé un
+          thème JSON aux couleurs du logo, passé chaque visuel en gris en ne laissant qu'un seul
+          élément en couleur, réécrit chaque titre en phrase qui conclut et ajouté la date des
+          données en pied de page. Côté modèle, j'ai écrit en DAX les mesures de marge et de
+          croissance cumulée, et corrigé les mesures qui affichaient −100 % sur les mois sans ventes.
+        </p>
+        <h4>Résultat</h4>
+        <p>
+          Le rapport se lit désormais en quelques secondes : le CA 2026 progresse de 21 % sur neuf
+          mois, trois produits réalisent les deux tiers des ventes et le Nigeria pèse 16 % du
+          chiffre d'affaires. Il montre aussi qu'aucun pays n'atteint son objectif (91 % de
+          réalisation globale, entre 88 % et 93 % selon les pays) : un écart aussi homogène suggère
+          des objectifs fixés trop haut partout, plutôt qu'un problème propre à un marché.
         </p>
       </div>
     </div>
