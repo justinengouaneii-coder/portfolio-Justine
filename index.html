@@ -228,6 +228,19 @@
             </div>
           </article>
 
+          <article class="project-card">
+            <img src="images/project-big-events.jpg" alt="Aperçu du tableau de bord BIG EVENTS : quatre indicateurs clés, évolution mensuelle du CA vs N-1, CA par région, par type d'événement et performance des commerciaux vs objectif" loading="lazy">
+            <div class="project-card-body">
+              <h3>Rapport de certification Power BI — BIG EVENTS Catering</h3>
+              <p>
+                Rapport de certification réalisé de bout en bout pour un traiteur événementiel
+                présent dans 5 régions françaises : modèle en étoile, nettoyage Power Query,
+                mesures DAX, extraction, info-bulle personnalisée et titres qui concluent.
+              </p>
+              <button class="btn btn-outline" data-project="project-5">Voir le détail</button>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -342,6 +355,39 @@
           chiffre d'affaires. Il montre aussi qu'aucun pays n'atteint son objectif (91 % de
           réalisation globale, entre 88 % et 93 % selon les pays) : un écart aussi homogène suggère
           des objectifs fixés trop haut partout, plutôt qu'un problème propre à un marché.
+        </p>
+      </div>
+
+      <div class="modal" id="modal-project-5">
+        <button class="modal-close" aria-label="Fermer">&times;</button>
+        <h3>Rapport de certification Power BI — BIG EVENTS Catering</h3>
+        <h4>Problème</h4>
+        <p>
+          Pour ma certification Power BI, j'ai mené un projet complet autour de BIG EVENTS, un
+          traiteur événementiel (organisation fictive créée pour ce projet) actif
+          dans 5 régions et 18 villes françaises : séminaires, galas, mariages, salons. La direction
+          commerciale devait suivre le chiffre d'affaires, la marge et l'atteinte des objectifs de
+          six commerciaux sur 2023-2025, à partir de données brutes imparfaites (valeurs vides,
+          doublons, espaces parasites).
+        </p>
+        <h4>Méthode</h4>
+        <p>
+          J'ai conçu un modèle en étoile (une table de faits de 3 600 ventes et six dimensions),
+          nettoyé les données dans Power Query (types, 45 doublons, valeurs vides recalculées),
+          créé une table Calendrier marquée comme table de dates et écrit une vingtaine de mesures
+          DAX : CA, marge, panier moyen, comparaison N-1, cumul YTD, atteinte d'objectif
+          proratisée et classement des clients. Le rapport Power BI compte une vue
+          d'ensemble, une page de détail commercial accessible par extraction, une info-bulle
+          personnalisée par région, et des titres dynamiques qui énoncent la conclusion de chaque
+          visuel selon les filtres.
+        </p>
+        <h4>Résultat</h4>
+        <p>
+          Le CA 2025 atteint 6,4 M€, en hausse de 10,8 % sur 2024, et cinq commerciaux sur six
+          dépassent leur objectif (109 % au global). L'Île-de-France concentre 47 % du chiffre
+          d'affaires. Surtout, les soirées de gala sont le premier type d'événement en CA
+          (1,68 M€) mais affichent la marge la plus faible (23,6 % contre 30,2 % en moyenne) :
+          un levier de tarification prioritaire pour la direction.
         </p>
       </div>
     </div>
