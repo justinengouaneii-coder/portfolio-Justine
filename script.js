@@ -1,6 +1,7 @@
 // =========================================================================
 // script.js — interactions du site
-// Rien ici ne contient de texte à modifier : le contenu est dans index.html.
+// Rien ici ne contient de texte à modifier : le contenu est dans index.html
+// (français) et dans i18n.js (italien, anglais).
 // =========================================================================
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -78,9 +79,12 @@ function initContactForm() {
   const note = document.getElementById("formNote");
   if (!form || !note) return;
 
+  // Messages traduits (voir i18n.js), avec repli sur le français
+  const t = (key, fallback) => (window.i18n ? window.i18n.t(key) : fallback);
+
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    note.textContent = "Envoi en cours...";
+    note.textContent = t("form.sending", "Envoi en cours...");
 
     try {
       const response = await fetch(form.action, {
@@ -90,13 +94,13 @@ function initContactForm() {
       });
 
       if (response.ok) {
-        note.textContent = "Message envoyé, merci ! Je vous réponds rapidement.";
+        note.textContent = t("form.success", "Message envoyé, merci ! Je vous réponds rapidement.");
         form.reset();
       } else {
-        note.textContent = "Une erreur est survenue. Réessayez ou écrivez-moi directement par email.";
+        note.textContent = t("form.error", "Une erreur est survenue. Réessayez ou écrivez-moi directement par email.");
       }
     } catch (error) {
-      note.textContent = "Une erreur est survenue. Réessayez ou écrivez-moi directement par email.";
+      note.textContent = t("form.error", "Une erreur est survenue. Réessayez ou écrivez-moi directement par email.");
     }
   });
 }

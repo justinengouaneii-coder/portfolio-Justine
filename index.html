@@ -7,13 +7,19 @@
   <!-- ===================================================================
        SEO : à ajuster avec vos vrais mots-clés / description
        =================================================================== -->
-  <title>Justine Ngouane II Kenfack — Data Analyst &amp; Consultante MOA BI | Power BI, SQL Server, DAX</title>
-  <meta name="description" content="Justine Ngouane II Kenfack, Consultante MOA BI et Data Analyst francophone spécialisée en Power BI, SQL Server et DAX. Portfolio de projets décisionnels pour entreprises, PME et ONG.">
+  <title data-i18n="meta.title">Justine Ngouane II Kenfack — Data Analyst &amp; Consultante MOA BI | Power BI, SQL Server, DAX</title>
+  <meta name="description" data-i18n-content="meta.description" content="Justine Ngouane II Kenfack, Consultante MOA BI et Data Analyst francophone spécialisée en Power BI, SQL Server et DAX. Portfolio de projets décisionnels pour entreprises, PME et ONG.">
   <meta name="robots" content="index, follow">
 
+  <!-- Versions linguistiques (le français est la version par défaut) -->
+  <link rel="alternate" hreflang="fr" href="https://portfolio-justine-zeta.vercel.app/">
+  <link rel="alternate" hreflang="it" href="https://portfolio-justine-zeta.vercel.app/?lang=it">
+  <link rel="alternate" hreflang="en" href="https://portfolio-justine-zeta.vercel.app/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://portfolio-justine-zeta.vercel.app/">
+
   <!-- Open Graph (aperçu quand le lien est partagé sur LinkedIn, etc.) -->
-  <meta property="og:title" content="Justine Ngouane II Kenfack — Data Analyst &amp; Consultante MOA BI">
-  <meta property="og:description" content="Portfolio de data analyst : Power BI, SQL Server, DAX et pilotage de projets décisionnels.">
+  <meta property="og:title" data-i18n-content="meta.ogTitle" content="Justine Ngouane II Kenfack — Data Analyst &amp; Consultante MOA BI">
+  <meta property="og:description" data-i18n-content="meta.ogDescription" content="Portfolio de data analyst : Power BI, SQL Server, DAX et pilotage de projets décisionnels.">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,21 +33,28 @@
   <!-- =====================================================
        NAVIGATION
        Les liens pointent vers les ancres (id) des sections plus bas.
+       Les boutons FR / IT changent la langue (voir i18n.js).
        ===================================================== -->
   <header class="site-header">
     <nav class="navbar container">
       <a href="#hero" class="logo">Justine <span>NIK</span></a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" data-i18n-aria-label="nav.menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
+
+      <div class="lang-switch" role="group" aria-label="Langue / Lingua / Language">
+        <a href="?lang=fr" class="lang-btn" data-lang="fr" lang="fr" hreflang="fr" title="Version française">FR</a>
+        <a href="?lang=it" class="lang-btn" data-lang="it" lang="it" hreflang="it" title="Versione italiana">IT</a>
+        <a href="?lang=en" class="lang-btn" data-lang="en" lang="en" hreflang="en" title="English version">EN</a>
+      </div>
     </nav>
   </header>
 
@@ -50,21 +63,22 @@
     <!-- =====================================================
          1. HERO
          Pour changer le texte d'accroche, modifiez uniquement
-         les paragraphes hero-eyebrow et hero-tagline ci-dessous.
+         les paragraphes hero-eyebrow et hero-tagline ci-dessous
+         (et leur traduction dans i18n.js).
          ===================================================== -->
     <section id="hero" class="hero">
       <div class="container hero-content">
-        <p class="hero-eyebrow">Consultante MOA BI &amp; Data Analyst — disponible pour missions</p>
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Consultante MOA BI &amp; Data Analyst — disponible pour missions</p>
         <h1>Justine Ngouane II Kenfack</h1>
         <p class="hero-role">Data Analyst</p>
-        <p class="hero-tagline">
+        <p class="hero-tagline" data-i18n="hero.tagline">
           Je conçois des tableaux de bord Power BI fiables à partir de données consolidées en un
           seul référentiel — pour que vos comités de direction discutent de stratégie, pas de qui
           a le bon chiffre.
         </p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-          <a href="#contact" class="btn btn-secondary">Me contacter</a>
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">Voir mes projets</a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero.ctaContact">Me contacter</a>
         </div>
       </div>
     </section>
@@ -79,19 +93,20 @@
           <img
             src="images/profile.jpg"
             alt="Portrait de Justine Ngouane II Kenfack, Data Analyst"
+            data-i18n-alt="about.photoAlt"
             width="320" height="320"
             loading="lazy">
         </div>
         <div class="about-text">
-          <h2>À propos</h2>
-          <p>
+          <h2 data-i18n="about.title">À propos</h2>
+          <p data-i18n="about.p1">
             Consultante MOA BI et Data Analyst spécialisée en Power BI, basée à Rome. Après une
             formation juridique (Licence en Droit et Master en Droit
             des Affaires à l'Università degli Studi di Roma La Sapienza), elle a d'abord exercé
             comme analyste fiscale pendant six ans avant de se réorienter vers la Business
             Intelligence, une transition consolidée par une certification en BI obtenue en juin 2023.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             Depuis 2023, elle a accompagné Habentis Data Solution à Paris, puis Ambra System
             à Rome, dans le recueil des besoins métier, la rédaction de
             spécifications fonctionnelles et le développement de tableaux de bord décisionnels.
@@ -111,11 +126,11 @@
          ===================================================== -->
     <section id="skills" class="skills section">
       <div class="container">
-        <h2>Compétences</h2>
+        <h2 data-i18n="skills.title">Compétences</h2>
         <div class="skills-grid">
 
           <div class="skill-card">
-            <h3>Analyse &amp; reporting BI</h3>
+            <h3 data-i18n="skills.bi">Analyse &amp; reporting BI</h3>
             <ul class="badge-list">
               <li class="badge">Excel</li>
               <li class="badge">Power BI</li>
@@ -125,7 +140,7 @@
           </div>
 
           <div class="skill-card">
-            <h3>Bases de données</h3>
+            <h3 data-i18n="skills.db">Bases de données</h3>
             <ul class="badge-list">
               <li class="badge">SQL Server</li>
               <li class="badge">SSAS</li>
@@ -134,7 +149,7 @@
           </div>
 
           <div class="skill-card">
-            <h3>Programmation</h3>
+            <h3 data-i18n="skills.prog">Programmation</h3>
             <ul class="badge-list">
               <li class="badge">Python</li>
               <li class="badge">R</li>
@@ -142,7 +157,7 @@
           </div>
 
           <div class="skill-card">
-            <h3>Méthodologie &amp; gestion de projet</h3>
+            <h3 data-i18n="skills.method">Méthodologie &amp; gestion de projet</h3>
             <ul class="badge-list">
               <li class="badge">Agile</li>
               <li class="badge">Scrum</li>
@@ -151,10 +166,10 @@
           </div>
 
           <div class="skill-card">
-            <h3>IA appliquée</h3>
+            <h3 data-i18n="skills.ai">IA appliquée</h3>
             <ul class="badge-list">
               <li class="badge">Claude</li>
-              <li class="badge">Automatisation</li>
+              <li class="badge" data-i18n="skills.automation">Automatisation</li>
             </ul>
           </div>
 
@@ -167,77 +182,78 @@
          Pour ajouter un 4e/5e projet : dupliquez une carte
          <article class="project-card"> et sa modale associée
          (#modal-project-X), gérées par script.js via data-project.
+         Pensez à ajouter les clés de traduction dans i18n.js.
          ===================================================== -->
     <section id="projects" class="projects section">
       <div class="container">
-        <h2>Projets</h2>
+        <h2 data-i18n="projects.title">Projets</h2>
         <div class="projects-grid">
 
           <!-- Carte projet 1 -->
           <article class="project-card">
-            <img src="images/project-congotopfashion.jpg" alt="Aperçu du tableau de bord CongoTopFashion : chiffre d'affaires par boutique et segmentation clients" loading="lazy">
+            <img src="images/project-congotopfashion.jpg" alt="Aperçu du tableau de bord CongoTopFashion : chiffre d'affaires par boutique et segmentation clients" data-i18n-alt="p1.alt" loading="lazy">
             <div class="project-card-body">
-              <h3>Tableau de bord décisionnel global — CongoTopFashion</h3>
-              <p>
+              <h3 data-i18n="p1.title">Tableau de bord décisionnel global — CongoTopFashion</h3>
+              <p data-i18n="p1.summary">
                 Conception d'un tableau de bord centralisant plus de 25 domaines métier (clients,
                 produits, boutiques, stocks, marketing, logistique...) pour unifier le pilotage
                 décisionnel de CongoTopFashion dans une vue globale pour la direction.
               </p>
-              <button class="btn btn-outline" data-project="project-1">Voir le détail</button>
+              <button class="btn btn-outline" data-project="project-1" data-i18n="projects.details">Voir le détail</button>
             </div>
           </article>
 
           <!-- Carte projet 2 -->
           <article class="project-card">
-            <img src="images/project-stocks.jpg" alt="Aperçu du tableau de bord de suivi des stocks du réseau de centres de santé" loading="lazy">
+            <img src="images/project-stocks.jpg" alt="Aperçu du tableau de bord de suivi des stocks du réseau de centres de santé" data-i18n-alt="p2.alt" loading="lazy">
             <div class="project-card-body">
-              <h3>Suivi des stocks — Réseau de centres de santé</h3>
-              <p>
+              <h3 data-i18n="p2.title">Suivi des stocks — Réseau de centres de santé</h3>
+              <p data-i18n="p2.summary">
                 Pilotage des stocks d'un réseau de 5 centres de santé (janvier-mars 2026), pour
                 donner à la direction une vision claire des ruptures, risques de pénurie,
                 surstocks et de la qualité des données saisies.
               </p>
-              <button class="btn btn-outline" data-project="project-2">Voir le détail</button>
+              <button class="btn btn-outline" data-project="project-2" data-i18n="projects.details">Voir le détail</button>
             </div>
           </article>
 
           <!-- Carte projet 3 -->
           <article class="project-card">
-            <img src="images/project-gusto-catering.jpg" alt="Aperçu du tableau de bord d'analyse des marges Gusto Events Catering" loading="lazy">
+            <img src="images/project-gusto-catering.jpg" alt="Aperçu du tableau de bord d'analyse des marges Gusto Events Catering" data-i18n-alt="p3.alt" loading="lazy">
             <div class="project-card-body">
-              <h3>Analyse et optimisation des marges — Gusto Events Catering</h3>
-              <p>
+              <h3 data-i18n="p3.title">Analyse et optimisation des marges — Gusto Events Catering</h3>
+              <p data-i18n="p3.summary">
                 Analyse de la rentabilité par segment d'activité (Corporate, Private,
                 Institutional) pour un traiteur belge, afin d'identifier des leviers d'optimisation
                 des marges face à l'inflation des coûts matières.
               </p>
-              <button class="btn btn-outline" data-project="project-3">Voir le détail</button>
+              <button class="btn btn-outline" data-project="project-3" data-i18n="projects.details">Voir le détail</button>
             </div>
           </article>
 
           <article class="project-card">
-            <img src="images/project-baraka.jpg" alt="Aperçu du tableau de bord de performance commerciale Baraka Energies : quatre indicateurs et l'évolution mensuelle du CA avec sa moyenne mobile" loading="lazy">
+            <img src="images/project-baraka.jpg" alt="Aperçu du tableau de bord de performance commerciale Baraka Energies : quatre indicateurs et l'évolution mensuelle du CA avec sa moyenne mobile" data-i18n-alt="p4.alt" loading="lazy">
             <div class="project-card-body">
-              <h3>Performance commerciale et objectifs — Baraka Energies</h3>
-              <p>
+              <h3 data-i18n="p4.title">Performance commerciale et objectifs — Baraka Energies</h3>
+              <p data-i18n="p4.summary">
                 Refonte d'un rapport Power BI de ventes d'équipements solaires dans une vingtaine
                 de pays africains : quatre KPI, des titres qui concluent et une seule information
                 mise en avant par visuel, pour lire la performance en quelques secondes.
               </p>
-              <button class="btn btn-outline" data-project="project-4">Voir le détail</button>
+              <button class="btn btn-outline" data-project="project-4" data-i18n="projects.details">Voir le détail</button>
             </div>
           </article>
 
           <article class="project-card">
-            <img src="images/project-big-events.jpg" alt="Aperçu du tableau de bord BIG EVENTS : quatre indicateurs clés, évolution mensuelle du CA vs N-1, CA par région, par type d'événement et performance des commerciaux vs objectif" loading="lazy">
+            <img src="images/project-big-events.jpg" alt="Aperçu du tableau de bord BIG EVENTS : quatre indicateurs clés, évolution mensuelle du CA vs N-1, CA par région, par type d'événement et performance des commerciaux vs objectif" data-i18n-alt="p5.alt" loading="lazy">
             <div class="project-card-body">
-              <h3>Rapport de certification Power BI — BIG EVENTS Catering</h3>
-              <p>
+              <h3 data-i18n="p5.title">Rapport de certification Power BI — BIG EVENTS Catering</h3>
+              <p data-i18n="p5.summary">
                 Rapport de certification réalisé de bout en bout pour un traiteur événementiel
                 présent dans 5 régions françaises : modèle en étoile, nettoyage Power Query,
                 mesures DAX, extraction, info-bulle personnalisée et titres qui concluent.
               </p>
-              <button class="btn btn-outline" data-project="project-5">Voir le détail</button>
+              <button class="btn btn-outline" data-project="project-5" data-i18n="projects.details">Voir le détail</button>
             </div>
           </article>
 
@@ -248,10 +264,10 @@
     <!-- Modales de détail projet (masquées par défaut, ouvertes via script.js) -->
     <div class="modal-overlay" id="modalOverlay">
       <div class="modal" id="modal-project-1">
-        <button class="modal-close" aria-label="Fermer">&times;</button>
-        <h3>Tableau de bord décisionnel global — CongoTopFashion</h3>
-        <h4>Problème</h4>
-        <p>
+        <button class="modal-close" aria-label="Fermer" data-i18n-aria-label="modal.close">&times;</button>
+        <h3 data-i18n="p1.title">Tableau de bord décisionnel global — CongoTopFashion</h3>
+        <h4 data-i18n="modal.problem">Problème</h4>
+        <p data-i18n="p1.problem">
           Ce projet s'inscrit dans le cadre de la modernisation du pilotage décisionnel de
           CongoTopFashion, une entreprise structurée autour de nombreuses entités opérationnelles :
           clients, produits, catégories, sous-catégories, marques, fournisseurs, employés,
@@ -263,14 +279,14 @@
           analyse des boutiques, analyse clients RFM, analyse marketing, analyse logistique
           retours, analyse fournisseurs, analyse stocks, etc.).
         </p>
-        <h4>Méthode</h4>
-        <p>
+        <h4 data-i18n="modal.method">Méthode</h4>
+        <p data-i18n="p1.method">
           À l'aide d'Excel, j'ai construit des indicateurs de chiffre d'affaires par boutique, de
           chiffre d'affaires par segment, ainsi qu'une répartition des motifs de retour, à partir
           des plus de 25 onglets sources.
         </p>
-        <h4>Résultat</h4>
-        <p>
+        <h4 data-i18n="modal.result">Résultat</h4>
+        <p data-i18n="p1.result">
           L'analyse a révélé que le canal e-commerce génère le chiffre d'affaires le plus élevé de
           tous les segments, et que les problèmes de taille constituent le principal motif de
           retour — deux constats qui ont directement orienté les priorités d'action de la
@@ -278,23 +294,23 @@
         </p>
       </div>
       <div class="modal" id="modal-project-2">
-        <button class="modal-close" aria-label="Fermer">&times;</button>
-        <h3>Suivi des stocks — Réseau de centres de santé</h3>
-        <h4>Problème</h4>
-        <p>
+        <button class="modal-close" aria-label="Fermer" data-i18n-aria-label="modal.close">&times;</button>
+        <h3 data-i18n="p2.title">Suivi des stocks — Réseau de centres de santé</h3>
+        <h4 data-i18n="modal.problem">Problème</h4>
+        <p data-i18n="p2.problem">
           Ce projet s'inscrit dans le cadre du pilotage des stocks d'un réseau de 5 centres de
           santé, sur la période janvier à mars 2026. L'objectif était de fournir à la direction
           une vision claire et fiable de la consommation, des ruptures, des risques de pénurie,
           des surstocks, ainsi que de la qualité des données saisies.
         </p>
-        <h4>Méthode</h4>
-        <p>
+        <h4 data-i18n="modal.method">Méthode</h4>
+        <p data-i18n="p2.method">
           À l'aide d'Excel, j'ai analysé la consommation mensuelle de stocks, la consommation
           totale par centre, la couverture de stock par centre, identifié le centre le plus à
           risque, et suivi les ruptures déclarées.
         </p>
-        <h4>Résultat</h4>
-        <p>
+        <h4 data-i18n="modal.result">Résultat</h4>
+        <p data-i18n="p2.result">
           L'analyse a identifié le Centre 1 comme le plus à risque, avec un stock en chute
           continue sur trois mois (85 → 72 → 37), signalant une rupture imminente avant même
           qu'elle ne survienne. Une rupture confirmée a par ailleurs été enregistrée au Centre 5
@@ -303,24 +319,24 @@
         </p>
       </div>
       <div class="modal" id="modal-project-3">
-        <button class="modal-close" aria-label="Fermer">&times;</button>
-        <h3>Analyse et optimisation des marges — Gusto Events Catering</h3>
-        <h4>Problème</h4>
-        <p>
+        <button class="modal-close" aria-label="Fermer" data-i18n-aria-label="modal.close">&times;</button>
+        <h3 data-i18n="p3.title">Analyse et optimisation des marges — Gusto Events Catering</h3>
+        <h4 data-i18n="modal.problem">Problème</h4>
+        <p data-i18n="p3.problem">
           Gusto Events Catering est un acteur majeur du catering en Belgique, actif sur trois segments :
           les événements d'entreprise (Corporate), les mariages et fêtes privées (Private), et la
           livraison de repas aux institutions et écoles (Institutional). Face à une concurrence
           accrue en 2025-2026 et à l'inflation des coûts des matières premières, la direction
           souhaitait optimiser ses marges sans détériorer la satisfaction client.
         </p>
-        <h4>Méthode</h4>
-        <p>
+        <h4 data-i18n="modal.method">Méthode</h4>
+        <p data-i18n="p3.method">
           À l'aide de Power BI, j'ai analysé le chiffre d'affaires par région, par client, par
           mois et par type d'événement, puis comparé le coût total par type d'événement afin
           d'identifier les segments les plus rentables et ceux qui pesaient sur la marge globale.
         </p>
-        <h4>Résultat</h4>
-        <p>
+        <h4 data-i18n="modal.result">Résultat</h4>
+        <p data-i18n="p3.result">
           L'analyse a révélé que les événements VIP, bien qu'affichant les coûts les plus élevés
           des trois segments, génèrent également le chiffre d'affaires le plus important —
           orientant la direction vers un arbitrage sur ce segment plutôt qu'une réduction
@@ -329,17 +345,17 @@
       </div>
 
       <div class="modal" id="modal-project-4">
-        <button class="modal-close" aria-label="Fermer">&times;</button>
-        <h3>Performance commerciale et objectifs — Baraka Energies</h3>
-        <h4>Problème</h4>
-        <p>
+        <button class="modal-close" aria-label="Fermer" data-i18n-aria-label="modal.close">&times;</button>
+        <h3 data-i18n="p4.title">Performance commerciale et objectifs — Baraka Energies</h3>
+        <h4 data-i18n="modal.problem">Problème</h4>
+        <p data-i18n="p4.problem">
           Baraka Energies distribue des kits solaires, des batteries et des appareils basse
           tension dans une vingtaine de pays africains. Son rapport de ventes alignait une dizaine
           d'indicateurs sur un fond sombre, sans hiérarchie ni conclusion : la direction ne voyait
           pas d'un coup d'œil si l'activité progressait, ni où agir.
         </p>
-        <h4>Méthode</h4>
-        <p>
+        <h4 data-i18n="modal.method">Méthode</h4>
+        <p data-i18n="p4.method">
           Dans Power BI (format PBIP), j'ai réduit la vue d'ensemble à quatre indicateurs — chiffre
           d'affaires, marge, taux de marge et croissance cumulée vs N-1 — et à un seul grand
           visuel : l'évolution mensuelle du CA avec sa moyenne mobile sur trois mois. J'ai créé un
@@ -348,8 +364,8 @@
           données en pied de page. Côté modèle, j'ai écrit en DAX les mesures de marge et de
           croissance cumulée, et corrigé les mesures qui affichaient −100 % sur les mois sans ventes.
         </p>
-        <h4>Résultat</h4>
-        <p>
+        <h4 data-i18n="modal.result">Résultat</h4>
+        <p data-i18n="p4.result">
           Le rapport se lit désormais en quelques secondes : le CA 2026 progresse de 21 % sur neuf
           mois, trois produits réalisent les deux tiers des ventes et le Nigeria pèse 16 % du
           chiffre d'affaires. Il montre aussi qu'aucun pays n'atteint son objectif (91 % de
@@ -359,10 +375,10 @@
       </div>
 
       <div class="modal" id="modal-project-5">
-        <button class="modal-close" aria-label="Fermer">&times;</button>
-        <h3>Rapport de certification Power BI — BIG EVENTS Catering</h3>
-        <h4>Problème</h4>
-        <p>
+        <button class="modal-close" aria-label="Fermer" data-i18n-aria-label="modal.close">&times;</button>
+        <h3 data-i18n="p5.title">Rapport de certification Power BI — BIG EVENTS Catering</h3>
+        <h4 data-i18n="modal.problem">Problème</h4>
+        <p data-i18n="p5.problem">
           Pour ma certification Power BI, j'ai mené un projet complet autour de BIG EVENTS, un
           traiteur événementiel (organisation fictive créée pour ce projet) actif
           dans 5 régions et 18 villes françaises : séminaires, galas, mariages, salons. La direction
@@ -370,8 +386,8 @@
           six commerciaux sur 2023-2025, à partir de données brutes imparfaites (valeurs vides,
           doublons, espaces parasites).
         </p>
-        <h4>Méthode</h4>
-        <p>
+        <h4 data-i18n="modal.method">Méthode</h4>
+        <p data-i18n="p5.method">
           J'ai conçu un modèle en étoile (une table de faits de 3 600 ventes et six dimensions),
           nettoyé les données dans Power Query (types, 45 doublons, valeurs vides recalculées),
           créé une table Calendrier marquée comme table de dates et écrit une vingtaine de mesures
@@ -381,8 +397,8 @@
           personnalisée par région, et des titres dynamiques qui énoncent la conclusion de chaque
           visuel selon les filtres.
         </p>
-        <h4>Résultat</h4>
-        <p>
+        <h4 data-i18n="modal.result">Résultat</h4>
+        <p data-i18n="p5.result">
           Le CA 2025 atteint 6,4 M€, en hausse de 10,8 % sur 2024, et cinq commerciaux sur six
           dépassent leur objectif (109 % au global). L'Île-de-France concentre 47 % du chiffre
           d'affaires. Surtout, les soirées de gala sont le premier type d'événement en CA
@@ -400,8 +416,8 @@
     <section id="contact" class="contact section">
       <div class="container contact-grid">
         <div class="contact-info">
-          <h2>Contact</h2>
-          <p>Disponible pour des missions freelance ou un poste de data analyst — n'hésitez pas à me contacter.</p>
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p data-i18n="contact.intro">Disponible pour des missions freelance ou un poste de data analyst — n'hésitez pas à me contacter.</p>
           <ul class="contact-list">
             <li>
               <span class="contact-label">Email</span>
@@ -415,16 +431,16 @@
         </div>
 
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/mojgwbog" method="POST">
-          <label for="name">Nom</label>
+          <label for="name" data-i18n="form.name">Nom</label>
           <input type="text" id="name" name="name" required>
 
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
 
-          <label for="message">Message</label>
+          <label for="message" data-i18n="form.message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
 
-          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <button type="submit" class="btn btn-primary" data-i18n="form.send">Envoyer</button>
           <p class="form-note" id="formNote"></p>
         </form>
       </div>
@@ -437,14 +453,15 @@
        ===================================================== -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>&copy; <span id="year"></span> Justine Ngouane II Kenfack. Tous droits réservés.</p>
+      <p>&copy; <span id="year"></span> Justine Ngouane II Kenfack. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
       <div class="footer-socials">
         <a href="https://www.linkedin.com/in/justine-ngouane-data/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-      <p class="footer-credit">Site créé avec Claude Code</p>
+      <p class="footer-credit" data-i18n="footer.credit">Site créé avec Claude Code</p>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

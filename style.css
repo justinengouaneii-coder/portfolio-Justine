@@ -131,7 +131,33 @@ h2 {
 .nav-links {
   display: flex;
   gap: 32px;
+  margin-left: auto;
 }
+
+/* Boutons de langue FR / IT / EN */
+.lang-switch {
+  display: flex;
+  gap: 2px;
+  margin-left: 28px;
+  padding: 3px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+}
+.lang-btn {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-text-muted);
+  transition: background-color var(--transition), color var(--transition);
+}
+.lang-btn:hover { color: var(--color-accent); text-decoration: none; }
+.lang-btn.active {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+.lang-btn.active:hover { color: #fff; }
 .nav-links a {
   color: var(--color-text);
   font-weight: 500;
@@ -432,7 +458,8 @@ h2 {
   .hero { padding: 120px 0 64px; }
   .hero h1 { font-size: 2rem; }
 
-  .nav-toggle { display: flex; }
+  .nav-toggle { display: flex; order: 3; margin-left: 12px; }
+  .lang-switch { margin-left: auto; }
   .nav-links {
     position: absolute;
     top: 72px;
