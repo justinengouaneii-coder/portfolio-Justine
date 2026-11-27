@@ -136,9 +136,9 @@
 
     en: {
       // --- Page header (browser tab, Google, LinkedIn) ---
-      "meta.title": "Justine Ngouane II Kenfack — Data Analyst &amp; BI Business Consultant | Power BI, SQL Server, DAX",
-      "meta.description": "Justine Ngouane II Kenfack, BI business consultant and Data Analyst specialising in Power BI, SQL Server and DAX. Portfolio of business intelligence projects for companies, SMEs and NGOs.",
-      "meta.ogTitle": "Justine Ngouane II Kenfack — Data Analyst &amp; BI Business Consultant",
+      "meta.title": "Justine Ngouane II Kenfack — BI Consultant &amp; Power BI Data Analyst | SQL Server, DAX",
+      "meta.description": "Justine Ngouane II Kenfack, BI Consultant &amp; Power BI Data Analyst, specialising in Power BI, SQL Server and DAX. Portfolio of business intelligence projects for companies, SMEs and NGOs.",
+      "meta.ogTitle": "Justine Ngouane II Kenfack — BI Consultant &amp; Power BI Data Analyst",
       "meta.ogDescription": "Data analyst portfolio: Power BI, SQL Server, DAX and business intelligence project management.",
 
       // --- Navigation ---
@@ -149,7 +149,7 @@
       "nav.contact": "Contact",
 
       // --- Hero ---
-      "hero.eyebrow": "BI Business Consultant &amp; Data Analyst — available for assignments",
+      "hero.eyebrow": "BI Consultant &amp; Power BI Data Analyst — available for assignments",
       "hero.tagline": "I build reliable Power BI dashboards from data consolidated into a single source of truth, so your leadership meetings discuss strategy, not who has the right number.",
       "hero.ctaProjects": "See my projects",
       "hero.ctaContact": "Get in touch",
@@ -157,7 +157,7 @@
       // --- About ---
       "about.photoAlt": "Portrait of Justine Ngouane II Kenfack, Data Analyst",
       "about.title": "About",
-      "about.p1": "BI business consultant and Data Analyst specialising in Power BI, based in Rome. After a legal education (Bachelor's degree in Law and Master's degree in Business Law at the Università degli Studi di Roma La Sapienza), she first worked as a tax analyst for six years before moving into Business Intelligence, a transition consolidated by a BI certification obtained in June 2023.",
+      "about.p1": "BI Consultant &amp; Power BI Data Analyst, based in Rome. After a legal education (Bachelor's degree in Law and Master's degree in Business Law at the Università degli Studi di Roma La Sapienza), she first worked as a tax analyst for six years before moving into Business Intelligence, a transition consolidated by a BI certification obtained in June 2023.",
       "about.p2": "Since 2023, she has supported Habentis Data Solution in Paris, then Ambra System in Rome, gathering business requirements, writing functional specifications and developing management dashboards. Her combined technical (SQL Server, SSAS, SSRS, DAX, Power BI Services) and methodological (Agile, Scrum, UML) expertise lets her bridge business and technical teams. Trilingual (French, Italian, English), she is also active in community life, notably as president of the Association of Cameroonian Women in Italy (ASFECAI).",
 
       // --- Skills ---
