@@ -36,9 +36,9 @@
 
     it: {
       // --- En-tête de page (onglet du navigateur, Google, LinkedIn) ---
-      "meta.title": "Justine Ngouane II Kenfack — Data Analyst &amp; Consulente BI (lato business) | Power BI, SQL Server, DAX",
-      "meta.description": "Justine Ngouane II Kenfack, consulente BI lato business e Data Analyst specializzata in Power BI, SQL Server e DAX. Portfolio di progetti di business intelligence per aziende, PMI e ONG.",
-      "meta.ogTitle": "Justine Ngouane II Kenfack — Data Analyst &amp; Consulente BI",
+      "meta.title": "Justine Ngouane II Kenfack — Consulente BI &amp; Data Analyst Power BI | SQL Server, DAX",
+      "meta.description": "Justine Ngouane II Kenfack, Consulente BI &amp; Data Analyst Power BI, specializzata in Power BI, SQL Server e DAX. Portfolio di progetti di business intelligence per aziende, PMI e ONG.",
+      "meta.ogTitle": "Justine Ngouane II Kenfack — Consulente BI &amp; Data Analyst Power BI",
       "meta.ogDescription": "Portfolio di data analyst: Power BI, SQL Server, DAX e gestione di progetti di business intelligence.",
 
       // --- Navigation ---
@@ -49,7 +49,7 @@
       "nav.contact": "Contatti",
 
       // --- Hero ---
-      "hero.eyebrow": "Consulente BI lato business &amp; Data Analyst — disponibile per incarichi",
+      "hero.eyebrow": "Consulente BI &amp; Data Analyst Power BI — disponibile per incarichi",
       "hero.tagline": "Realizzo dashboard Power BI affidabili a partire da dati consolidati in un unico punto di riferimento, perché i vostri comitati di direzione discutano di strategia e non di chi ha il numero giusto.",
       "hero.ctaProjects": "Vedi i miei progetti",
       "hero.ctaContact": "Contattami",
@@ -57,7 +57,7 @@
       // --- À propos ---
       "about.photoAlt": "Ritratto di Justine Ngouane II Kenfack, Data Analyst",
       "about.title": "Chi sono",
-      "about.p1": "Consulente BI lato business e Data Analyst specializzata in Power BI, con sede a Roma. Dopo una formazione giuridica (Laurea in Giurisprudenza e Laurea Magistrale in Diritto commerciale presso l'Università degli Studi di Roma La Sapienza), ha lavorato per sei anni come analista fiscale prima di riorientarsi verso la Business Intelligence, un percorso consolidato da una certificazione in BI conseguita nel giugno 2023.",
+      "about.p1": "Consulente BI &amp; Data Analyst Power BI, con sede a Roma. Dopo una formazione giuridica (Laurea in Giurisprudenza e Laurea Magistrale in Diritto commerciale presso l'Università degli Studi di Roma La Sapienza), ha lavorato per sei anni come analista fiscale prima di riorientarsi verso la Business Intelligence, un percorso consolidato da una certificazione in BI conseguita nel giugno 2023.",
       "about.p2": "Dal 2023 ha affiancato Habentis Data Solution a Parigi, poi Ambra System a Roma, nella raccolta dei requisiti di business, nella redazione di specifiche funzionali e nello sviluppo di dashboard direzionali. La sua doppia competenza tecnica (SQL Server, SSAS, SSRS, DAX, Power BI Services) e metodologica (Agile, Scrum, UML) le permette di fare da ponte tra i team di business e i team tecnici. Trilingue (francese, italiano, inglese), è inoltre impegnata nel mondo associativo, in particolare come presidente dell'Associazione delle Donne Camerunesi in Italia (ASFECAI).",
 
       // --- Compétences ---
