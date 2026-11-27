@@ -257,6 +257,19 @@
             </div>
           </article>
 
+          <article class="project-card">
+            <img src="images/project-ducale.jpg" alt="Aperçu du rapport Ducale Food Group : chiffre d'affaires, évolution vs N-1, écart au budget, marge brute et courbe mensuelle comparée à N-1 et au budget" data-i18n-alt="p6.alt" loading="lazy">
+            <div class="project-card-body">
+              <h3 data-i18n="p6.title">Data Warehouse et pilotage de la performance — Ducale Food Group</h3>
+              <p data-i18n="p6.summary">
+                Projet BI de bout en bout pour un groupe agroalimentaire de la région de Parme :
+                entrepôt de données SQL Server, ETL avec contrôle qualité, modèle Power BI de
+                53 mesures DAX et rapport de direction en italien (ventes, budget, compte de résultat).
+              </p>
+              <button class="btn btn-outline" data-project="project-6" data-i18n="projects.details">Voir le détail</button>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -404,6 +417,41 @@
           d'affaires. Surtout, les soirées de gala sont le premier type d'événement en CA
           (1,68 M€) mais affichent la marge la plus faible (23,6 % contre 30,2 % en moyenne) :
           un levier de tarification prioritaire pour la direction.
+        </p>
+      </div>
+
+      <div class="modal" id="modal-project-6">
+        <button class="modal-close" aria-label="Fermer" data-i18n-aria-label="modal.close">&times;</button>
+        <h3 data-i18n="p6.title">Data Warehouse et pilotage de la performance — Ducale Food Group</h3>
+        <h4 data-i18n="modal.problem">Problème</h4>
+        <p data-i18n="p6.problem">
+          Ducale Food Group (organisation fictive créée pour ce projet) produit Parmigiano
+          Reggiano, Prosciutto di Parma, pâtes et sauces dans trois usines de la région de Parme,
+          et vend en grande distribution, restauration, épiceries fines, à l'export et en ligne.
+          Le reporting se faisait dans Excel à partir d'extractions de l'ERP : la direction
+          financière voulait un référentiel unique pour suivre ventes, budget et compte de résultat,
+          et comprendre pourquoi 2025 avait fini sous le budget.
+        </p>
+        <h4 data-i18n="modal.method">Méthode</h4>
+        <p data-i18n="p6.method">
+          J'ai généré une base réaliste et reproductible (246 000 lignes de commandes 2023-2026,
+          301 clients, 52 produits) et conçu un entrepôt de données SQL Server avec trois tables de
+          faits à des grains différents : ventes, budget/forecast et comptabilité. Un script T-SQL
+          nettoie un export ERP volontairement imparfait (formats de date mixtes, doublons, codes
+          obsolètes) avec mise en quarantaine des lignes invalides et rapprochement au centime avec
+          la comptabilité. Dans Power BI (format PBIP), j'ai construit un modèle de 53 mesures DAX
+          — comparaisons à période égale, effet prix / effet volume, budget à date, compte de
+          résultat avec sous-totaux — et un rapport de cinq pages en italien avec des titres qui
+          concluent.
+        </p>
+        <h4 data-i18n="modal.result">Résultat</h4>
+        <p data-i18n="p6.result">
+          Le chiffre d'affaires 2025 atteint 45,1 M€ (+4,1 % sur 2024) mais reste 6,7 % sous le
+          budget : l'export (−1,6 M€, avec l'effondrement des ventes aux États-Unis après les droits
+          de douane) et la grande distribution (−0,7 M€) expliquent l'essentiel de l'écart.
+          L'EBITDA ressort à 12,2 % contre 14 % prévus, sous l'effet de la hausse du coût du lait
+          et de remises qui passent de 20 % (2023) à 26 % (2025) chez le premier client. Le rapport signale aussi
+          un incident qualité sur un lot de jambon tranché (7,3 % de retours en mars 2026).
         </p>
       </div>
     </div>
